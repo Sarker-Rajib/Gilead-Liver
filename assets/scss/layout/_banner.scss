@@ -1,0 +1,48 @@
+.banner {
+   .banner-top {
+      p {
+         font-family: "gotham-book";
+         font-size: 22px;
+         padding-top: 7px;
+         padding-bottom: 7px;
+
+         @media (max-width: 767px) {
+            font-size: 18px;
+         }
+      }
+   }
+
+   .message {
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(#4A4585, 0.8);
+      width: 40%;
+      left: 50px;
+      text-align: center;
+      padding: 40px;
+      color: #fff;
+      box-sizing: content-box;
+
+      h3 {
+         font-size: min(max(30px, 3vw), 3vw);
+         font-family: "gotham-bold";
+      }
+   }
+
+
+   .banner-bottom {
+      display: grid;
+      place-items: center;
+
+      h4 {
+         font-family: "gotham-bold";
+         font-size: 40px;
+         color: #fff;
+
+
+         @media (max-width: 767px) {
+            font-size: 28px;
+         }
+      }
+   }
+}

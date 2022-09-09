@@ -1,0 +1,60 @@
+.footer{
+   .promotional-footer{
+      background: rgba(#58595B, 0.05);
+
+      .container{
+         max-width: 1066px;
+
+         .sub-title{
+            color: #4A4585;
+         }
+      }
+   }
+
+   .main-footer{
+      background: #2F2C55;
+      color: #fff;
+      padding: 45px 0;
+
+      &.w-1066{
+         .container{
+            max-width: 1066px;
+         }
+      }
+
+      h4{
+         font-family: "gotham-bold";
+         font-size: 18px;
+      }
+
+      ul{
+         li{
+            font-family: "gotham-book";
+            font-size: 18px;
+            color: #fff;
+
+            &:not(:last-child){
+               margin-bottom: 25px;
+            }
+
+            a{
+               color: #fff;
+               font-family: "gotham-book";
+               font-size: 18px;
+               text-decoration: underline;
+               transition: all 0.1s ease-in-out;
+
+               &:hover{
+                  color: #B51026;
+               }
+            }
+         }
+      }
+   }
+}
+
+.w-1080{
+   .container{
+      max-width: 1080px;
+   }
+}

@@ -1,0 +1,53 @@
+@use '../abstracts/variables';
+
+body {
+  font-family: "gotham-book";
+  color: variables.$color-black;
+
+  // max-width: 1280px;
+  // margin: auto;
+}
+
+.main-title {
+  font-family: "gotham-bold";
+  font-size: 36px;
+  color: variables.$color-purple;
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.sub-title {
+  font-family: "gotham-bold";
+  font-size: 22px;
+  color: #EB771F;
+}
+
+.contact-title {
+  font-family: "gotham-bold";
+  font-size: 22px;
+  color: #4A4585;
+}
+
+.article p {
+  font-family: "gotham-book";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+// font size
+.fs-20px{
+  font-size: 20px;
+}
+.fs-16px{
+  font-size: 16px;
+}
+
+// color
+.text-red {
+  color: #4A4585;
+}
+.text-darkblue {
+  color: variables.$color-darkblue;
+}

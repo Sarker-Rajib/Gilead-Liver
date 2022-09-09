@@ -1,0 +1,183 @@
+@use '../abstracts/variables';
+
+.header {
+   .header-top {
+      padding: 14px 0;
+      align-items: center;
+
+      h5 {
+         font-family: "gotham-bold";
+         font-size: 18px;
+      }
+
+      a {
+         font-size: 18px;
+         color: #fff;
+         text-decoration: underline;
+      }
+   }
+
+   .main-header {
+      background: rgba(variables.$color-ash, 0.05);
+
+      @media (max-width: 1199px) {
+         padding: 8px 0;
+      }
+
+      .navbar {
+         padding: 0;
+
+         .navbar-brand {
+            img {
+               width: 100%;
+               max-width: 220px;
+
+               @media (max-width: 767px) {
+                  max-width: 130px;
+               }
+            }
+         }
+
+         .navbar-toggler {
+            img {
+               max-width: 30px;
+            }
+         }
+
+         .navbar-nav {
+            .nav-item {
+               position: relative;
+
+               &:not(:last-child) {
+                  margin-right: 50px;
+               }
+
+               &.dropdown {
+                  &:hover {
+                     .dropdown-items {
+                        border-top: 3px solid #707070;
+                        height: auto;
+                        z-index: 999;
+                     }
+                  }
+
+                  .nav-link {
+                     position: relative;
+
+                     &:after {
+                        display: none;
+                     }
+                  }
+
+                  .dropdown-items {
+                     position: absolute;
+                     background: #fff;
+                     border-radius: 0;
+                     margin: 0;
+                     padding: 0;
+                     top: 100%;
+                     left: 0;
+                     overflow: hidden;
+                     height: 0;
+                     z-index: -1;
+                     border-top: none;
+
+                     .dropdown-item {
+                        color: #2F2C55;
+                        padding: 20px;
+                        font-family: gotham-book;
+                        font-size: 22px;
+                        transition: all 0.2s ease-in-out;
+
+                        &:hover {
+                           color: #000;
+                           background: rgba(#AC2153, 0.2);
+                        }
+                     }
+                  }
+               }
+
+               .nav-link {
+                  padding: 30px 10px;
+                  font-family: "gotham-bold";
+                  font-size: 18px;
+                  color: variables.$color-purple;
+                  transition: all 0.3s ease-in-out;
+
+                  &:hover {
+                     color: variables.$color-red;
+                  }
+
+                  &.active {
+                     color: variables.$color-red;
+                  }
+
+               }
+
+               .dropdown-toggle {
+                  color: variables.$color-red;
+
+                  &.show {
+                     color: variables.$color-darkblue;
+                  }
+               }
+            }
+         }
+      }
+
+
+      .mobile-nav {
+         .offcanvas-header {
+            background: rgba(#58595B, 0.05);
+
+            img{
+               max-width: 190px;
+            }
+         }
+
+         .mobile-nav-item {
+            padding-bottom: 25px;
+
+
+            a {
+               font-family: "gotham-book";
+               font-size: 22px;
+               color: rgb(0, 0, 0);
+               transition: all 0.1s ease-in-out;
+
+               &:hover {
+                  color: #AC2153;
+               }
+            }
+         }
+      }
+   }
+
+   .promotional-header {
+      img {
+         @media (max-width: 991px) {
+            max-width: 150px;
+         }
+      }
+
+      .promotional-text {
+         display: grid;
+         place-items: center;
+
+         p {
+            font-family: "gotham-bold";
+            font-size: 18px;
+
+            @media (max-width: 991px) {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+
+   .header-bottom {
+      p {
+         color: #2F2C55;
+      }
+   }
+}

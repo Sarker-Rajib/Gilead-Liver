@@ -1,0 +1,74 @@
+@use '../abstracts/variables';
+
+// background color
+.bg-darkblue {
+    background-color: variables.$color-darkblue;
+}
+
+.bg-purple {
+    background-color: variables.$color-purple;
+}
+
+// section padding
+.pt-40{
+    padding-top: 40px;
+}
+
+.pb-40{
+    padding-bottom: 40px;
+}
+
+.pt-80{
+    padding-top: 80px;
+}
+
+.pb-80{
+    padding-bottom: 80px;
+}
+
+.upto991-pb-80{
+    @media(max-width: 991px){
+        padding-bottom: 80px;
+    }
+}
+
+.upto767-pb-80{
+    @media(max-width: 767px){
+        padding-bottom: 80px;
+    }
+}
+
+.w-lg{
+    min-width: 300px;
+    @media(max-width: 767px){
+        min-width: 260px;
+    }
+}
+
+.w-lg-main{
+    min-width: 435px;
+    max-width:440px;
+    @media(max-width: 991px){
+        min-width: 300px;
+        max-width: 315px;
+    }
+    @media(max-width: 767px){
+        min-width: 190px;
+        max-width: 200px;
+    }
+}
+
+.max-w-1080{
+    max-width: 1080px;
+}
+
+.min-hight-xl{
+    @media(min-width: 1350px){
+        min-height: 150px;
+    }
+}
+
+.w-190{
+    min-width: 190px;
+    max-width: 195px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gilead HCP</title>
+  <link rel='shortcut icon' href='assets/images/fav-icon.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+   <!-- pop up for pop-up -->
+   <div class="container pt-5">
+
+      <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#popUp">
+         <div class="px-2">
+            <p>pop-up</p>
+         </div>
+      </button>
+   
+      <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#externalsite">
+         <div class="px-2">
+            <p>external site</p>
+         </div>
+      </button>
+   </div>
+
+
+   <!-- popup -->
+   <div class="modal fade" id="popUp" tabindex="-1" aria-labelledby="popUpLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body">
+            <section class="pop-up bg-darkblue p-3 p-md-5">
+               <div class="container">
+                  <div class="contents bg-white">
+                     <div class="section-header bg-purple d-xl-flex px-2 align-items-center py-2 px-md-3 position-relative">
+                        <div class="text-center">
+                           <img src="assets/images/logo-white.png" class="img-fluid w-lg me-4" alt="logo">
+                        </div>
+                        <div class="text-center">
+                           <h2 class="text-white">Are you a UK or Ireland Healthcare Professional?</h2>
+                        </div>
+                        <button type="button" class="btn position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/close-white.png" alt="ose"></button>
+                     </div>
+                     <div class="popup-body p-4">
+                        <p>This website is for UK and Ireland healthcare professionals only. </p>
+                        <div class="text-center text-md-end pt-5">
+                           <a href="#" class="Link me-0 me-md-3 d-none d-md-inline-block">I am a member of public</a>
+                           <a href="#" class="btn-red">
+                              <div>
+                                 <p>
+                                    YES
+                                 </p>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="text-center py-3 d-block d-md-none">
+                           <a href="#" class="Link me-0 me-md-3">I am a member of public</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      </div>
+   </div>
+
+   <!-- external sile -->
+   <div class="modal fade" id="externalsite" tabindex="-1" aria-labelledby="externalsiteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body">
+            <section class="external-site bg-darkblue p-md-5 p-3">
+               <div class="container">
+                  <div class="contents bg-white">
+                     <div class="section-header bg-purple d-xl-flex px-2 align-items-center py-2 px-md-3 position-relative">
+                        <div class="text-center">
+                           <img src="assets/images/logo-white.png" class="img-fluid w-lg me-4" alt="logo">
+                        </div>
+                        <div class="text-center">
+                           <h2 class="text-white">You are leaving Gilead</h2>
+                        </div>
+                        <button type="button" class="btn position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/close-white.png" alt="ose"></button>
+                     </div>
+                     <div class="popup-body p-4">
+                        <p class="text-center text-md-start">This link will take you to an external website. Gilead is not responsible for any content in third-party websites.</p>
+                        <div class="text-center text-md-end pt-5">
+                           <a href="#" class="Link me-2 me-md-5" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+                           <a href="#" class="btn-red">
+                              <div>
+                                 <p>
+                                    Accept
+                                 </p>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      </div>
+   </div>
+
+
+
+  <!-- script -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

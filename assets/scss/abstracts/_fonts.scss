@@ -1,0 +1,22 @@
+
+  @font-face {
+    font-family: "gotham-book";
+    src: url('../fonts/Gotham-Book.woff') format('woff'),
+         url('../fonts/Gotham-Book.woff2') format('woff2'),
+         url('../fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "gotham-medium";
+    src: url('../fonts/GothamMedium.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "gotham-bold";
+    src: url('../fonts/GothamBold.ttf') format('truetype'),
+         url('../fonts/GothamBold.otf') format('truetype');
+    font-weight: normal;
+}

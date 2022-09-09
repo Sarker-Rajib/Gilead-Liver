@@ -1,0 +1,58 @@
+@use '../abstracts/variables';
+
+.btn-red {
+    border: none;
+    transition: all 0.2s linear;
+
+    div {
+        display: inline-block;
+        background: #AC2153;
+        padding: 15px 0;
+        min-width: 150px;
+        max-width: 160px;
+        position: relative;
+        z-index: 999;
+        transition: 0.2s;
+
+        p {
+            font-family: "gotham-bold";
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+        }
+
+        &:hover {
+            color: #fff;
+            background: #f1045b;
+        }
+    }
+}
+
+.btn-white {
+    border: none;
+    transition: all 0.2s linear;
+
+    div {
+        display: grid;
+        place-items: center;
+        min-width: 150px;
+        background: #fff;
+        padding: 15px 0;
+        max-width: 160px;
+        position: relative;
+        z-index: 999;
+
+        p {
+            color: #AC2153;
+            font-family: "gotham-bold";
+            font-size: 22px;
+            text-align: center;
+        }
+
+        &:hover {
+            color: variables.$color-darkblue;
+            background-color: darken(#fff, 10);
+        }
+    }
+
+}
