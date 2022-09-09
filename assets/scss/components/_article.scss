@@ -5,6 +5,20 @@
       .image {
          background: rgba(#E2E2E2, 0.39);
       }
+
+      .breadcrumb-items {
+         margin-right: 5px;
+         a{
+            color: #2F2C55;
+            font-family: "gotham-book";
+            font-size: 18px;
+         }
+      }
+      .breadcrumb-items.active {         
+         a{
+            color: #AC2153;
+         }
+      }
    }
 
    .half-bg {

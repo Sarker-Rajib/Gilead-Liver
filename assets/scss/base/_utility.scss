@@ -68,7 +68,18 @@
     }
 }
 
+.min-hight-xlP{
+    min-height: 60px;
+    @media(min-width: 1350px){
+        min-height: 80px;
+    }
+}
+
 .w-190{
     min-width: 190px;
     max-width: 195px;
+}
+
+.color-dark-blue{
+    color: #2F2C55;
 }
